@@ -1,0 +1,72 @@
+#p-attendance-check-responsive {
+/* ------------------------------------------------------------------------- *
+ *  Responsive
+/* ------------------------------------------------------------------------- */
+// all responsive style is dealed in here 
+// because responsiveness is related with other parts not only one component
+
+/*  Mega - 1500px
+/* --------------------------------------------------- */
+@include mq($until: 'mega') {
+  
+}
+
+/*  Extra large
+/* --------------------------------------------------- */
+@include mq($until: 'xl') {
+
+}
+
+/*  Large
+/* --------------------------------------------------- */
+@include mq($until: 'lg') {
+}
+
+/*  Medium
+/* --------------------------------------------------- */
+@include mq($until: 'md') {
+  &.p-attendance-check {
+     min-height: 700px;
+  }
+  .p-attendance-check__weekday > li,
+  .p-attendance-check__days > li {
+    padding: 4px;
+  }
+
+  .p-attendance-check__weekday > li {
+    font-size: 0.94rem;
+    padding: 2px;
+  }
+  .p-attendance-check__days__date__number {
+    font-size: 1rem;
+  }
+  .p-attendance-check__stamp_btn {
+    width: $stamp-btn-width-md;
+    height: $stamp-btn-width-md;
+    line-height: $stamp-btn-width-md;
+    font-size: $stamp-btn-fs-md;
+    & > .inner {
+      &:hover {
+        padding: 0;
+        background: #23466e;
+      }
+      &:before {
+        height: $outside-stamp-btn-width-md;
+        width: $outside-stamp-btn-width-md;
+      }
+      &:hover:before {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}
+
+/*  Small
+/* --------------------------------------------------- */
+@include mq($until: 'sm') {
+  &.p-attendance-check {
+    min-height: 400px;
+ }
+}
+
+}

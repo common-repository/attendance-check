@@ -1,0 +1,1 @@
+!function(n){var u="mmenu";n[u].i18n({Menu:"Menu"})}(jQuery);

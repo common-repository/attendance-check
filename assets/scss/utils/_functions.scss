@@ -1,0 +1,23 @@
+@function theme-color($situation) {
+  @return map-get($map: $theme-color, $key: $situation);
+}
+@function z($level) {
+  @return map-get($map: $z-index, $key: $level);
+}
+@function get_breakpoint_map($default, $mega, $xl, $lg, $md, $sm) {
+  $map : (
+    'default' : $default,
+    'mega' : $mega,
+    'xl' : $xl,
+    'lg' : $lg,
+    'md' : $md,
+    'sm' : $sm
+  );
+  @return $map;
+}
+@function font-size($of, $breakpoint) {
+  @return map-get(map-get($map: $font-size, $key: $of), $breakpoint);
+}
+@function size($of, $breakpoint, $w_h) {
+  @return map-get($map: map-get(map-get($map: $size, $key: $of), $breakpoint), $key: $w_h);
+}

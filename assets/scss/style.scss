@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------------------- *
+ *  SCSS file structure
+/* ------------------------------------------------------------------------- */
+
+
+/*  Vendors ( SCSS Plugin made by other developers )
+/* --------------------------------------------------- */
+// Customized bootstrap
+//
+// This contains only grid, utils, functions and mixins 
+// which are useful on making site more easily
+// @import "vendors/bootstrap/bootstrap";
+
+// Modular Scale
+//
+// we can get formal font-size
+@import "vendors/modularscale/main";
+
+// Open Color
+//
+// there are beautiful colors
+@import "vendors/open-color";
+
+// BEM Tool
+//
+// Functions and Mixins for using BEM more easily.
+@import "vendors/bem/main";
+
+// Susy
+//
+// Math functions to help make custom grid system
+@import "vendors/susy/main";
+
+// Media Query
+//
+// Make media query easy
+@import "vendors/mq";
+
+
+/*  Utils ( useful functions, mixins )
+/* --------------------------------------------------- */
+// Useful my own tools are in these files.
+@import "utils/functions",
+        "utils/mixins";
+        
+/*  General ( default setup , override other plugin's settings )
+/* ----------------------------------------------------------------- */
+// Many variables in variables.scss are used throw on this site.
+@import "general/variables";
+
+// General styles
+//
+// Note that you never use BEM or Bootstrap components here.
+// This place is just for override or some simple styling on our site.
+@import "general/general";
+
+/*  Components ( tiny reusable modules )
+/* --------------------------------------------------- */
+@import "components/calendar";
+
+/*  Layout ( everything that takes part in laying out )
+/* --------------------------------------------------- */
+@import "layout/header",
+        "layout/main",
+        "layout/footer",
+        "layout/sidebar";
+
+/*  Pages ( different design on each page or overriding components )
+/* ----------------------------------------------------------------- */
+
+/*  Responsive ( response to site's dynamic width )
+/* --------------------------------------------------- */
+@import "responsive";

@@ -1,0 +1,154 @@
+@include block('p-attendance-check') {
+  ul,li {
+    list-style: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    width: 100%;
+    max-width: 100px;
+  }
+  min-height: 800px;
+  @include element('header') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include element('pointer') {
+      cursor: pointer;
+    }
+    @include element('monthname') {
+      font-size: 2rem;
+    }
+  }
+  .p-attendance-check__weekday > li,
+  .p-attendance-check__days > li {
+    flex-basis: 14.25%;
+    max-width: 14.25%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include element('weekday') {
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #575E6D;
+    color: white;
+    line-height: 40px;
+    li {
+      font-size: 30px;
+    }
+  }
+  @include element('days') {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border : 0.5px solid #DADADA;
+    border-top: none;
+    border-left: none;
+    li {
+      border : 0.5px solid #DADADA;
+      border-bottom: none;
+      border-right: none;
+    }
+    @include element('date') {
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      transition: background-color 0.3s;
+      &:not(.p-attendance-check__days__date--today):not(.p-attendance-check__days__date--yes_seal):hover {
+        background-color: aliceblue;
+      }
+      @include element('number') {
+        z-index: 2;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        font-size: 1.4rem;
+        padding: 4px;
+        color: #575E6D;
+      }
+    }
+  }
+  @include element('stamp_btn') {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: $stamp-btn-width;
+    height: $stamp-btn-width;
+    line-height: $stamp-btn-width;
+
+    & > .inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Segoe UI";
+      letter-spacing: 1px;
+
+      background: #23466e;
+      border: none;
+      border-radius: 50%;
+      color: #e4ecfa;
+      cursor: pointer;
+
+      transition: 0.5s;
+
+      &:hover {
+        background: #3e70aa;
+        padding: -2px;
+      }
+
+      &:before {
+        position: absolute;
+        border-radius: 50%;
+        border: $outside-stamp-btn-border solid #2185d0;;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.15), 0 0 15px rgba(0, 255, 204, 0.15) inset;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: all 0.3s;
+      }
+      &:hover:before {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+
+    &.loading {
+      background-color: rgba($color: #000000, $alpha: 0);
+      .inner {
+        display: none;
+      }
+      .sk-fading-circle {
+        display: block;
+      }
+    }
+
+    &.complete {
+      display: none;
+    }
+  }
+  .p-attendance-check__days__date--today .p-attendance-check__stamp_btn:not(.complete) {
+    display: block;
+  }
+  .sk-fading-circle {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}

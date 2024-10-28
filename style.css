@@ -1,0 +1,391 @@
+/* ------------------------------------------------------------------------- *
+ *  SCSS file structure
+/* ------------------------------------------------------------------------- */
+/*  Vendors ( SCSS Plugin made by other developers )
+/* --------------------------------------------------- */
+/**
+ * Mixin for Responsiveness
+ */
+/**
+ * Flexbox Container
+ */
+/**
+ * Mixin for flex grouping
+ */
+/**
+ * Variables & Settings
+ */
+/**
+ * TODO://
+ */
+/*  Utils ( useful functions, mixins )
+/* --------------------------------------------------- */
+/*  General ( default setup , override other plugin's settings )
+/* ----------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- *
+ *  Variables
+/* ------------------------------------------------------------------------- */
+/*  Break Points
+/* --------------------------------------------------- */
+/*  Color
+/* --------------------------------------------------- */
+/*  Z-index
+/* --------------------------------------------------- */
+/*  Font-size
+/* --------------------------------------------------- */
+/*  Size
+/* --------------------------------------------------- */
+/* ------ Width & Height ------ */
+/* ------ Width ------ */
+/* ------ Height ------ */
+/* ------ Line-height ------ */
+/*  Space
+/* --------------------------------------------------- */
+/* ------ margin ------ */
+/* ------------------------------------------------------------------------- *
+ *  Base settings
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- *
+ *  Tools
+/* ------------------------------------------------------------------------- */
+/*  Color
+/* --------------------------------------------------- */
+/*  No Style
+/* --------------------------------------------------- */
+ul.no-style {
+  margin: 0;
+  padding: 0; }
+  ul.no-style li {
+    list-style: none; }
+
+a.no-style {
+  text-decoration: none; }
+
+/*  Barrier
+/* --------------------------------------------------- */
+.fence {
+  width: 1px;
+  background: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 12px; }
+
+/*  Display
+/* --------------------------------------------------- */
+/*  Animation
+/* --------------------------------------------------- */
+.sk-fading-circle .sk-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.sk-fading-circle .sk-circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both; }
+
+.sk-fading-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.sk-fading-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg); }
+
+.sk-fading-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.sk-fading-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg); }
+
+.sk-fading-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg); }
+
+.sk-fading-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.sk-fading-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg); }
+
+.sk-fading-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg); }
+
+.sk-fading-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.sk-fading-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg); }
+
+.sk-fading-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg); }
+
+.sk-fading-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+
+.sk-fading-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+
+.sk-fading-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+.sk-fading-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+
+.sk-fading-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s; }
+
+.sk-fading-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s; }
+
+.sk-fading-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
+.sk-fading-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s; }
+
+.sk-fading-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s; }
+
+.sk-fading-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s; }
+
+.sk-fading-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+/* ------------------------------------------------------------------------- *
+ * Override
+/* ------------------------------------------------------------------------- */
+.mycred-history-wrapper .row.pagination-top {
+  display: none; }
+
+.mycred-history-wrapper ul.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+  .mycred-history-wrapper ul.pagination li {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+/*  Components ( tiny reusable modules )
+/* --------------------------------------------------- */
+.p-attendance-check {
+  min-height: 800px; }
+  .p-attendance-check ul, .p-attendance-check li {
+    list-style: none; }
+  .p-attendance-check * {
+    box-sizing: border-box; }
+  .p-attendance-check img {
+    width: 100%;
+    max-width: 100px; }
+  .p-attendance-check__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .p-attendance-check__header__pointer {
+      cursor: pointer; }
+    .p-attendance-check__header__monthname {
+      font-size: 2rem; }
+  .p-attendance-check .p-attendance-check__weekday > li,
+  .p-attendance-check .p-attendance-check__days > li {
+    flex-basis: 14.25%;
+    max-width: 14.25%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .p-attendance-check__weekday {
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #575E6D;
+    color: white;
+    line-height: 40px; }
+    .p-attendance-check__weekday li {
+      font-size: 30px; }
+  .p-attendance-check__days {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border: 0.5px solid #DADADA;
+    border-top: none;
+    border-left: none; }
+    .p-attendance-check__days li {
+      border: 0.5px solid #DADADA;
+      border-bottom: none;
+      border-right: none; }
+    .p-attendance-check__days__date {
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      transition: background-color 0.3s; }
+      .p-attendance-check__days__date:not(.p-attendance-check__days__date--today):not(.p-attendance-check__days__date--yes_seal):hover {
+        background-color: aliceblue; }
+      .p-attendance-check__days__date__number {
+        z-index: 2;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        font-size: 1.4rem;
+        padding: 4px;
+        color: #575E6D; }
+  .p-attendance-check__stamp_btn {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    line-height: 100px; }
+    .p-attendance-check__stamp_btn > .inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Segoe UI";
+      letter-spacing: 1px;
+      background: #23466e;
+      border: none;
+      border-radius: 50%;
+      color: #e4ecfa;
+      cursor: pointer;
+      transition: 0.5s; }
+      .p-attendance-check__stamp_btn > .inner:hover {
+        background: #3e70aa;
+        padding: -2px; }
+      .p-attendance-check__stamp_btn > .inner:before {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #2185d0;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.15), 0 0 15px rgba(0, 255, 204, 0.15) inset;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: all 0.3s; }
+      .p-attendance-check__stamp_btn > .inner:hover:before {
+        transform: translate(-50%, -50%) scale(1.05); }
+    .loading.p-attendance-check__stamp_btn {
+      background-color: rgba(0, 0, 0, 0); }
+      .loading.p-attendance-check__stamp_btn .inner {
+        display: none; }
+      .loading.p-attendance-check__stamp_btn .sk-fading-circle {
+        display: block; }
+    .complete.p-attendance-check__stamp_btn {
+      display: none; }
+  .p-attendance-check .p-attendance-check__days__date--today .p-attendance-check__stamp_btn:not(.complete) {
+    display: block; }
+  .p-attendance-check .sk-fading-circle {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+
+/*  Layout ( everything that takes part in laying out )
+/* --------------------------------------------------- */
+/*  Pages ( different design on each page or overriding components )
+/* ----------------------------------------------------------------- */
+/*  Responsive ( response to site's dynamic width )
+/* --------------------------------------------------- */
+#p-attendance-check-responsive {
+  /* ------------------------------------------------------------------------- *
+ *  Responsive
+/* ------------------------------------------------------------------------- */
+  /*  Mega - 1500px
+/* --------------------------------------------------- */
+  /*  Extra large
+/* --------------------------------------------------- */
+  /*  Large
+/* --------------------------------------------------- */
+  /*  Medium
+/* --------------------------------------------------- */
+  /*  Small
+/* --------------------------------------------------- */ }
+  @media (max-width: 47.99em) {
+    #p-attendance-check-responsive.p-attendance-check {
+      min-height: 700px; }
+    #p-attendance-check-responsive .p-attendance-check__weekday > li,
+    #p-attendance-check-responsive .p-attendance-check__days > li {
+      padding: 4px; }
+    #p-attendance-check-responsive .p-attendance-check__weekday > li {
+      font-size: 0.94rem;
+      padding: 2px; }
+    #p-attendance-check-responsive .p-attendance-check__days__date__number {
+      font-size: 1rem; }
+    #p-attendance-check-responsive .p-attendance-check__stamp_btn {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16.8px; }
+      #p-attendance-check-responsive .p-attendance-check__stamp_btn > .inner:hover {
+        padding: 0;
+        background: #23466e; }
+      #p-attendance-check-responsive .p-attendance-check__stamp_btn > .inner:before {
+        height: 66px;
+        width: 66px; }
+      #p-attendance-check-responsive .p-attendance-check__stamp_btn > .inner:hover:before {
+        transform: translate(-50%, -50%) scale(1); } }
+  @media (max-width: 35.99em) {
+    #p-attendance-check-responsive.p-attendance-check {
+      min-height: 400px; } }

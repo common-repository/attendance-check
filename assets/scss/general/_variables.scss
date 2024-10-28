@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------------------- *
+ *  Variables
+/* ------------------------------------------------------------------------- */
+
+/*  Break Points
+/* --------------------------------------------------- */
+// this is overide of mq
+$mq-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  mega : 1500px
+);
+
+/*  Color
+/* --------------------------------------------------- */
+// setting individual color and relationship
+$tc-body : #6f7d95;
+$tc-a : #78829d;
+$tc-logo : #F8B832;
+$tc-header-background : #2f364a;
+$tc-main-navigation-background : #19202e;
+$tc-main-menu-text-hover : #15a4fa;
+$tc-footer-background : #EEF1F7;
+$tc-footer-site-info__etc : $oc-gray-5;
+
+// this may seem like useless, 
+// but it will be more readable in other scss files using this variable
+$theme-color : (
+  body : $tc-body,
+  a : $tc-a,
+  logo : $tc-logo,
+  header-background : $tc-header-background,
+  main-navigation-background : $tc-main-navigation-background,
+  main-menu-text-hover : $tc-main-menu-text-hover,
+  footer-background : $tc-footer-background,
+  footer-site-info__etc : $tc-footer-site-info__etc,
+);
+
+/*  Z-index
+/* --------------------------------------------------- */
+$z-index : (
+  weak : 1,
+  normal : 2,
+  strong : 3,
+  bully : 4,
+  god : 9999
+);
+
+/*  Font-size
+/* --------------------------------------------------- */
+$fs-front-message : (
+  default : ms(8), 
+  mega    : ms(7), 
+  xl      : ms(6), 
+  lg      : ms(5), 
+  md      : ms(5), 
+  sm      : ms(4),
+);
+$font-size : (
+  front-message       : $fs-front-message,
+);
+
+/*  Size
+/* --------------------------------------------------- */
+/* ------ Width & Height ------ */
+// front-back
+$wh-ratio : 0.9;
+$wh-front-back-default  : 400px;
+$wh-front-back-mega     : ($wh-front-back-default * $wh-ratio);
+$wh-front-back-xl       : ($wh-front-back-mega * $wh-ratio);
+$wh-front-back-lg       : ($wh-front-back-xl * $wh-ratio);
+$wh-front-back-md       : ($wh-front-back-lg * $wh-ratio);
+$wh-front-back-sm       : ($wh-front-back-md * $wh-ratio);
+
+// stamp button
+// default fs -> font-size
+$stamp-btn-fs : 28px;
+$stamp-btn-width : 100px;
+$outside-stamp-btn-width : $stamp-btn-width + 10px;
+$outside-stamp-btn-border : 2px;
+$outside-stamp-btn-margin : (($outside-stamp-btn-width / 2) + $outside-stamp-btn-border) * -1;
+// mobile
+$stamp-btn-ratio : 0.6;
+$stamp-btn-fs-md : $stamp-btn-fs * 0.6;
+$stamp-btn-width-md : $stamp-btn-width * 0.6;
+$outside-stamp-btn-width-md : $outside-stamp-btn-width * 0.6;
+$outside-stamp-btn-margin-md : (($outside-stamp-btn-width-md / 2) + $outside-stamp-btn-border) * -1;
+
+
+$size : (
+  front-back : (
+    default : (
+      wh : $wh-front-back-default,
+    ),
+    mega : (
+      wh : $wh-front-back-mega,
+    ),
+    xl : (
+      wh : $wh-front-back-xl,
+    ),
+    lg : (
+      wh : $wh-front-back-lg,
+    ),
+    md : (
+      wh : $wh-front-back-md,
+    ),
+    sm : (
+      wh : $wh-front-back-sm,
+    ),
+  ),
+);
+
+/* ------ Width ------ */
+
+/* ------ Height ------ */
+
+/* ------ Line-height ------ */
+
+
+/*  Space
+/* --------------------------------------------------- */
+/* ------ margin ------ */

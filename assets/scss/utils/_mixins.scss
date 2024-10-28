@@ -1,0 +1,6 @@
+@mixin container() {
+  max-width: mq-get-breakpoint-width('xl');
+  margin: 0 auto;
+  width: span(12);
+  padding: 0 gutter() * 2;
+}
